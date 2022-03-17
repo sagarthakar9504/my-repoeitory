@@ -15,13 +15,21 @@ public class LoginPage {
 		
 	}
 	public WebElement getPasswordtxt() {
-		return driver.findElement(By.xpath("//input[@id=\"txtPassword\"]"));
+		return driver.findElement(By.id("txtPassword"));
 	}
 	public WebElement getLoginbtn() {
 		return driver.findElement(By.id("btnLogin"));
 	}
 	public WebElement getInvalidmassagelable() {
 		return driver.findElement(By.id("spanMessage"));
+	}
+	public  WebElement getinvalidMessageLabel() {
+		return driver.findElement(By.xpath("//span[@id='spanMessage']"));
+	}
+
+	public void Login(String string, String string2) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }
